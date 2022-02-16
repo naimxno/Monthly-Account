@@ -6,19 +6,67 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Monthly Account</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./css/style.css">
+
 </head>
 
 <body>
   <header>
-    <h2>Monthly Account</h2>
+    <h1>Monthly Account</h1>
   </header>
   <main>
-    <section>
-
+    <!-- money images  part-->
+    <section class="img-container">
+      <img src="./images/pexels-karolina-grabowska-4386335.jpg" alt="">
     </section>
-    <section>
-
+    <!-- money account part -->
+    <section class="account-container">
+      <!-- income part -->
+      <div class="income-wrapper">
+        <h3>Income</h3>
+        <div>
+          <label for="">Income :</label>
+          <input class="input-box" type="number" name="" id="">
+        </div>
+      </div>
+      <!-- Expenses part -->
+      <div class="expenses-wrapper">
+        <h3>Expenses</h3>
+        <div>
+          <label for="">Food :</label>
+          <input class="input-box" type="number" name="" id="">
+        </div>
+        <div>
+          <label for="">Rent :</label>
+          <input class="input-box" type="number" name="" id="">
+        </div>
+        <div>
+          <label for="">Clothes :</label>
+          <input class="input-box" type="number" name="" id="">
+        </div>
+        <button class="btn">Calculate</button>
+      </div>
+      <!-- result part -->
+      <div class="result-wrapper">
+        <h3>Total Expenses : <span>00</span></h3>
+        <h3>Balance : <span>00</span></h3>
+      </div>
+      <!-- saving part -->
+      <div class="saving-wrapper">
+        <div class="saving-calculate">
+          <p>Save : </p>
+          <input class="input-box" type="number" name="" id="">
+          <span>%</span>
+          <button class="btn">Save</button>
+        </div>
+        <div class="amount">
+          <h3>Saving Amount : <span>00</span></h3>
+          <h3>Remaining Balance : <span>00</span></h3>
+        </div>
+      </div>
     </section>
   </main>
   <script src="./js/app.js"></script>
