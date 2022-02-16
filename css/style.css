@@ -5,48 +5,63 @@
 }
 body{
   font-family:'Inter', sans-serif;
+  height: 100vh;
 }
 header h1{
   text-align: center;
-  margin: 30px 0;
   color: white;
   background-color: #009966;
   padding: 10px;
 }
 main{
+  margin:3% auto;
   display: flex;
-  align-items: center;
+  align-items: stretch;
   justify-content: center;
 }
+
+/* images part */
 .img-container{
+  width: 650px;
    margin: 10px;
 }
+
+.img-container img{
+  height: 100%;
+  width: 80%;
+  margin: auto;
+  display: block;
+}
+
+/* account part */
 .account-container{
-  width: 50%;
-  background-color: #e4eeeb;
+  width: 550px;
+  background-color: #f1f5f4;
   padding: 20px;
   margin: 10px;
 
 }
 .income-wrapper, .expenses-wrapper{
-  background-color: #cdece2;
-  margin: 10px;
+  margin: 5px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 10px;
+  padding: 10px 0;
   
 }
 .income-wrapper div, .expenses-wrapper div{
-  width: 60%;
+  width: 450px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
   margin: 10px;
 }
 .input-box{
   border: none;
-  padding: 5px;
+  padding: 8px;
+  background-color: #bed8cf;
+  margin-bottom: 5px;
+  margin-left: 20px;
 }
 .btn{
   border-color: transparent;
@@ -56,4 +71,71 @@ main{
   border-radius: 5px;
   font-size: 16px;
   font-weight: bold;
+}
+.result-wrapper h3, .amount h3 {
+  text-align: center;
+  margin: 15px;
+}
+
+/* saving part */
+.saving-calculate{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 450px;
+  margin: auto;
+}
+
+/* responsive  for mobile */
+@media only screen and (max-width: 688px) {
+  main{
+    width: 100%;
+    flex-direction: column;
+    margin: 0;
+}
+.img-container{
+  width: 100%;
+  margin: 0;
+}
+.img-container img{
+  width: 100%;
+}
+.account-container{
+  width: 100%;
+  margin-bottom: 20px;
+  margin: 0;
+}
+.income-wrapper div, .expenses-wrapper div{
+  width: 100%;
+}
+.saving-calculate{
+  width: 100%;
+}
+}
+
+/* responsive  for tab */
+@media only screen and (max-width: 992px) {
+  main{
+    width: 100%;
+    flex-direction: column;
+    margin: 0;
+}
+.img-container{
+  width: 100%;
+  margin: 0;
+}
+.img-container img{
+  width: 100%;
+}
+.account-container{
+  width: 100%;
+  margin-bottom: 20px;
+  margin: 0;
+}
+.income-wrapper div, .expenses-wrapper div{
+  width: 60%;
+}
+.saving-calculate{
+  width: 60%;
+}
 }
