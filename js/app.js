@@ -36,7 +36,7 @@ function setValue(id, setAmount) {
 function errorMsgHandle(text) {
   const errorMsg = document.getElementById('error-msg');
   errorMsg.innerText = text;
-  setTimeout(() => {
+  setTimeout(function () {
     errorMsg.innerText = '';
   }, 3000);
 }
