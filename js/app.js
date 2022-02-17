@@ -11,12 +11,21 @@ function inputValueHandle(inputId) {
   }
   else if (inputValue < 0) {
     errorMsgHandle("Error: The Amount of money can't be negative");
+    markError(inputBox);
   }
   else {
     errorMsgHandle("Error: The Amount of money can't be Text");
+    markError(inputBox);
   }
   // inputBox.value = '';
   return inputValue;
+}
+// mark Error
+function markError(inputBox) {
+  inputBox.style.border = '2px solid red';
+  setTimeout(function () {
+    inputBox.style.border = 'none';
+  }, 3000);
 }
 // set input value
 function setValue(id, setAmount) {
@@ -65,7 +74,7 @@ document.getElementById('Saving-btn').addEventListener('click', function () {
     setValue('saving-amount', saving);
     setValue('remaining-balance', remainingAmount)
   }
-  else {
+  else if (saveingPercentages > 100) {
     errorMsgHandle("*Error: The percentage can't exceed 100*")
   }
 })
