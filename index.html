@@ -24,12 +24,13 @@
     </section>
     <!-- money account part -->
     <section class="account-container">
+      <p id="error-msg"></p>
       <!-- income part -->
       <div class="income-wrapper">
         <h3>Income</h3>
         <div>
-          <label for="">Income :</label>
-          <input class="input-box" type="number" name="" id="">
+          <label>Income :</label>
+          <input class="input-box" type="text" id="income">
         </div>
       </div>
       <!-- Expenses part -->
@@ -37,34 +38,34 @@
         <h3>Expenses</h3>
         <div>
           <label for="">Food :</label>
-          <input class="input-box" type="number" name="" id="">
+          <input class="input-box" type="text" id="food">
         </div>
         <div>
           <label for="">Rent :</label>
-          <input class="input-box" type="number" name="" id="">
+          <input class="input-box" type="text" id="rent">
         </div>
         <div>
           <label for="">Clothes :</label>
-          <input class="input-box" type="number" name="" id="">
+          <input class="input-box" type="text" id="clothes">
         </div>
-        <button class="btn">Calculate</button>
+        <button id="calculate-btn" class="btn">Calculate</button>
       </div>
       <!-- result part -->
       <div class="result-wrapper">
-        <h3>Total Expenses : <span>00</span></h3>
-        <h3>Balance : <span>00</span></h3>
+        <h3>Total Expenses : <span id="total-expenses">00</span></h3>
+        <h3>Balance : <span id="balance">00</span></h3>
       </div>
       <!-- saving part -->
       <div class="saving-wrapper">
         <div class="saving-calculate">
           <p>Save : </p>
-          <input class="input-box" type="number" name="" id="">
+          <input class="input-box" type="text" id="save">
           <span>%</span>
-          <button class="btn">Save</button>
+          <button id="Saving-btn" class="btn">Save</button>
         </div>
         <div class="amount">
-          <h3>Saving Amount : <span>00</span></h3>
-          <h3>Remaining Balance : <span>00</span></h3>
+          <h3>Saving Amount : <span id="saving-amount">00</span></h3>
+          <h3>Remaining Balance : <span id="remaining-balance">00</span></h3>
         </div>
       </div>
     </section>
